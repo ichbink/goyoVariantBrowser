@@ -1,0 +1,8 @@
+@namespace("shared.variants")
+
+protocol NaiveVariants{
+    record SingleVariantField {
+        string name;
+        string value;
+    }
+}

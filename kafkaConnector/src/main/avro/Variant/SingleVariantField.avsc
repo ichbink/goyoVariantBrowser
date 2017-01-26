@@ -1,0 +1,12 @@
+{
+  "type" : "record",
+  "name" : "SingleVariantField",
+  "namespace" : "shared.variants",
+  "fields" : [ {
+    "name" : "name",
+    "type" : "string"
+  }, {
+    "name" : "value",
+    "type" : "string"
+  } ]
+}

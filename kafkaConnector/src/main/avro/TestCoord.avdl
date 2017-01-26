@@ -1,0 +1,8 @@
+@namespace("shared.variants")
+protocol TestCoord {
+  import idl "CoordNaive.avdl";
+  record TestCoord {
+	Coord coord;
+  }
+
+}

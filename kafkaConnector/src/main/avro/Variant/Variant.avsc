@@ -1,0 +1,38 @@
+{
+  "type" : "record",
+  "name" : "Variant",
+  "namespace" : "shared.variants",
+  "fields" : [ {
+    "name" : "coord",
+    "type" : {
+      "type" : "record",
+      "name" : "Coord",
+      "fields" : [ {
+        "name" : "chr",
+        "type" : "string"
+      }, {
+        "name" : "start",
+        "type" : "int"
+      }, {
+        "name" : "end",
+        "type" : [ "int", "null" ]
+      } ]
+    }
+  }, {
+    "name" : "fieldSet",
+    "type" : {
+      "type" : "array",
+      "items" : {
+        "type" : "record",
+        "name" : "SingleVariantField",
+        "fields" : [ {
+          "name" : "name",
+          "type" : "string"
+        }, {
+          "name" : "value",
+          "type" : "string"
+        } ]
+      }
+    }
+  } ]
+}

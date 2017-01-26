@@ -1,0 +1,8 @@
+@namespace("shared.variants")
+protocol Coord {
+  record Coord {
+        string chr;
+        int start;
+        int end;
+  }
+}

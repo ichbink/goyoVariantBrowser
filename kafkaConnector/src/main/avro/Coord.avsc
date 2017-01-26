@@ -1,0 +1,9 @@
+{ "namespace" :"ingemm.utils.variant",
+  "type": "record",
+  "name": "Coord",
+  "fields": [
+    {"name": "chr", "type": "string"},
+    {"name": "start", "type": "int"},
+    {"name": "end", "type" : "[ null, int]"}
+  ]
+}

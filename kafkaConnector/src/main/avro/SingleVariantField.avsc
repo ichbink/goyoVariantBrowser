@@ -1,0 +1,8 @@
+{
+  "namespace": "ingemm.utils.variant",
+ "type": "record",
+ "name": "SingleVariantField",
+ "fields": [
+     {"name": "value", "type": "string"}
+    ]
+}

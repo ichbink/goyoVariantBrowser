@@ -1,0 +1,52 @@
+{
+  "type": "record",
+  "name": "Variant",
+  "fields": [
+    {
+      "name": "coord",
+      "type":
+
+
+
+
+
+      "type": {
+        "type": "record",
+        "name": "v",
+        "fields": [
+          {
+            "name": "chr",
+            "type": "string"
+          },
+          {
+            "name": "start",
+            "type": "int"
+          },
+          {
+            "name": "end",
+            "type": [
+              "int",
+              "null"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "fieldSet",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "f",
+          "fields": [
+            {
+              "name": "value",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

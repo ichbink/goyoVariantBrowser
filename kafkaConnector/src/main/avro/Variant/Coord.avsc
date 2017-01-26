@@ -1,0 +1,15 @@
+{
+  "type" : "record",
+  "name" : "Coord",
+  "namespace" : "shared.variants",
+  "fields" : [ {
+    "name" : "chr",
+    "type" : "string"
+  }, {
+    "name" : "start",
+    "type" : "int"
+  }, {
+    "name" : "end",
+    "type" : "int"
+  } ]
+}

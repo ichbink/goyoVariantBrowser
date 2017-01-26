@@ -1,0 +1,30 @@
+[
+{
+  "namespace": "ingemm.utils.genomicsvariants",
+  "type": "record",
+  "name": "Coord",
+  "fields": [
+    {"name": "chr", "type": "string"},
+    {"name": "start", "type": "int"},
+    {"name": "end", "type" : ["int", "null"]}
+  ]
+},
+{
+ "namespace": "ingemm.utils.genomicsvariants",
+ "type": "record",
+ "name": "SingleVariantField",
+ "fields": [
+     {"name": "value", "type": "string"}
+ ]
+},
+{
+ "namespace": "ingemm.utils.genomicsvariants",
+ "type": "record",
+ "name": "Variant",
+ "fields": [
+     {"name": "coord", "type": "Coord"},
+     {"name": "fieldSet", "type": { "type": "array", "items": "SingleVariantField"} }
+ ]
+}
+]
+

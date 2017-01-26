@@ -1,0 +1,12 @@
+@namespace("shared.variants")
+
+protocol NaiveVariants{
+
+    import idl "Coord.avdl";
+    import idl "SingleVariantField.avdl";
+    
+record Variant {
+        shared.variants.Coord coord;
+        array<shared.variants.SingleVariantField> fieldSet;
+    }
+}

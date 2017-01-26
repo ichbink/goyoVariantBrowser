@@ -1,0 +1,35 @@
+{
+  "namespace": "ingemm.utils.variant",
+  "type": "record",
+  "name": "Variant",
+  "fields": [
+    {
+      "name": "coord",
+      "type":
+      { "namespace" :"ingemm.utils.variant",
+        "type": "record",
+        "name": "Coord",
+        "fields": [
+          {"name": "chr", "type": "string"},
+          {"name": "start", "type": "int"},
+          {"name": "end", "type" : [ "null", "int"] }
+        ]
+      }
+    },
+    {
+      "name": "fieldSet",
+      "type": {
+        "type": "array",
+        "items": {
+          "namespace": "ingemm.utils.variant",
+          "type": "record",
+          "name": "SingleVariantField",
+          "fields": [
+            {"name": "value", "type": "string"}
+          ]
+        }
+
+      }
+    }
+  ]
+}
